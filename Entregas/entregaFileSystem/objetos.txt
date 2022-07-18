@@ -1,0 +1,1 @@
+[{"title":"Celular","price":500,"id":0},{"title":"Ipad","price":800,"id":1},{"title":"Laptop","price":700,"id":2}]
