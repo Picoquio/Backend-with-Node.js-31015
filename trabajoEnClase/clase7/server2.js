@@ -68,12 +68,6 @@ app.put("/api/palabras/:pos", (req, res) => {
   });
 
 
-
-
-
-
-
-
 const server = app.listen(PORT, () => {
     console.log(`Server listening in port ${PORT}`)
 });
