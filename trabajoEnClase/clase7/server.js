@@ -48,8 +48,10 @@ app.get('/api/palabras/:num', (req, res) => {
     }
 }) 
 
-app.listen(PORT, () => {
+
+const server = app.listen(PORT, () => {
     console.log(`Server listening in port ${PORT}`)
 });
 
 server.on("error", error => console.log(`Error en servidor: ${error}`))
+server.on("error", (error) => console.log(`Error en servidor ${error}`));
