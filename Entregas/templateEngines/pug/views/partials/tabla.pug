@@ -1,0 +1,16 @@
+thead(class="table")
+	tr
+		th(scope="col" class="col") Title
+		th(scope="col" class="col") Price
+		th(scope="col" class="col") Url
+tbody
+if datos.length === 0
+	tr
+		td(colspan="3") No hay datos
+else
+	each index in datos
+		tr
+			td= index.title
+			td= index.price
+			td
+				img(src=index.url class="productoImagen")

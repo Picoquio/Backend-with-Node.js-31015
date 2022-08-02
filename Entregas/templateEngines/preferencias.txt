@@ -1,0 +1,1 @@
+No tengo un claro favorito entre handlebars y ejs. La sintaxis de pug es tan poco usual para js que no me gustó.
