@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+    <title>My chat app</title>
+</head>
+<body>
+    <h1>My chat app</h1>
+    <div id="messages"></div>
+    
+    
+    
+    <!-- Enviamos desde el frontend mensajes al servidor. (...) lo que no tiene este formu es un 
+    action, ya que eso provocaría que se recargue la página. Por ello, para saber cuándo se envía
+el formulario utilizaremos el evento 'onsubmit' que llamará a la función addMessage (en main.js) -->
+    <form onsubmit="return addMessage(this)">
+        <input type="text" id="username" placeholder="Tu Nombre" >
+        <input type="text" id="texto" placeholder="Cuéntanos algo...">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
