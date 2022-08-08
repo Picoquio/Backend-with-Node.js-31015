@@ -6,7 +6,7 @@ const MessagesActions = require("../Controller/msgController");
 
 // return all products
 router.get("/", (req, res) => {
-  res.render("index", { datos: Actions.getAll() });
+  res.render("productos", { datos: Actions.getAll() });
 });
 
 // return a product by id

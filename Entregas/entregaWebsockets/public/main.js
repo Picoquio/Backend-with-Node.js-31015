@@ -23,8 +23,8 @@ function render(datos) {
     <table class="table" style="margin: 0 auto; width: 50%;">
         <thead>
             <tr>
-                <th scope="col">Producto</th>
-                <th scope="col">Precio</th>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
                 <th scope="col">Thumbnail</th>
             </tr>
         </thead>
